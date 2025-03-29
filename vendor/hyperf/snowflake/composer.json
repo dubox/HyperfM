@@ -1,0 +1,46 @@
+{
+    "name": "hyperf/snowflake",
+    "description": "A snowflake library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "snowflake"
+    ],
+    "homepage": "https://hyperf.io",
+    "support": {
+        "docs": "https://hyperf.wiki",
+        "issues": "https://github.com/hyperf/hyperf/issues",
+        "pull-request": "https://github.com/hyperf/hyperf/pulls",
+        "source": "https://github.com/hyperf/hyperf"
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/contract": "~3.0.0"
+    },
+    "suggest": {
+        "psr/container": "Required to use MetaGeneratorFactory.",
+        "hyperf/config": "Required to read snowflake config.",
+        "hyperf/redis": "Required to use RedisMilliSecondMetaGenerator or RedisSecondMetaGenerator."
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\Snowflake\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\Snowflake\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\Snowflake\\ConfigProvider"
+        }
+    }
+}

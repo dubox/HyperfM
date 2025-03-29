@@ -1,0 +1,22 @@
+.buildpath
+.vscode
+.settings/
+.project
+*.patch
+.idea/
+.git/
+git*
+runtime/
+# vendor/
+.phpintel/
+.env
+.DS_Store
+.phpunit*
+*.cache
+
+# app/*
+# !app/Common/
+# !app/FileCenter/
+
+# 忽略以方便本地调试
+app/*/Controller/TestController.php

@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+/**
+ * This file is part of Hyperf.
+ *
+ * @link     https://www.hyperf.io
+ * @document https://hyperf.wiki
+ * @contact  group@hyperf.io
+ * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ */
+namespace App\Test\Constants;
+
+use App\Common\Override\Constants;
+
+/**
+ * 定义本模块独有的内部错误信息定义
+ *  -错误码使用本模块专用区间范围避免与其他模块冲突
+ */
+#[Constants]
+class InternalErrorCode extends \App\Common\Constants\InternalErrorCode
+{
+   
+
+}
