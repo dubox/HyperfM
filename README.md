@@ -12,7 +12,8 @@
 - 表单验证器优化
 - 其他...
 
-## 运行
+## 使用
+- 运行
 ```bash
 # 构建镜像
 docker build -t HyperfM . 
@@ -21,6 +22,12 @@ docker run -d --name hm -v $(pwd):/opt/www -p 9601:9501 HyperfM
 # or 进入命令行
 docker run -it --name hm -v $(pwd):/opt/www -p 9601:9501 HyperfM bash
 ```
+- 创建模块
+```bash
+#创建一个名为Abc的模块: 
+php bin/hyperf.php dev:m-new Abc
+```
+
 
 ## Hyperf 启动流程
 ![Hyperf 启动流程图](https://app-res.thisnet.cn/thisnet/upload2025-03-29T20:37:47.png)
