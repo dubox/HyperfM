@@ -21,3 +21,6 @@ docker run -d --name hm -v $(pwd):/opt/www -p 9601:9501 HyperfM
 # or 进入命令行
 docker run -it --name hm -v $(pwd):/opt/www -p 9601:9501 HyperfM bash
 ```
+
+## Hyperf 启动流程
+![Hyperf 启动流程图](https://app-res.thisnet.cn/thisnet/upload2025-03-29T20:37:47.png)
